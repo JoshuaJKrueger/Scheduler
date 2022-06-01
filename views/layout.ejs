@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A planner that tries to be an assistant by scheduling pre-defined tasks and goals, keeping stats and notes, and gives reminders.">
+    <meta name="keywords" content="scheduler, schedule, manager, scheduling, habit, assistant, goal, tracker">
+    <meta name="author" content="Joshua J. Krueger">
+
+    <title>Scheduler</title>
+    <link rel="icon" type="image/x-icon" href="/images/REMOVE.ico"> <!-- TODO: Create favicon -->
+    <link rel="stylesheet" href="/css/layout.css">
+  </head>
+
+  <body>
+    <div id="gridContainer">
+      <%- include('./partials/navigation') %>
+      <main>
+        <%- include('./partials/flash') %>
+        <%- body %>
+      </main>
+      <details>
+        <summary><!-- TODO: Current Task Name --></summary>
+        <!-- TODO: Edit task these might need to be in a div and in home-->
+      </details>
+    </div>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

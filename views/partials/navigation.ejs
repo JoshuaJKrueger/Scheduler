@@ -1,0 +1,17 @@
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/notes">Notes</a></li>
+    <li><a href="/questions">Questions</a></li>
+    <li><a href="/reminders">Reminders</a></li>
+    <li><a href="/statistics">Statistics</a></li>
+  
+    <% if (!currentUser) { %>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+    <% } else { %>
+      <li><a href="/logout">Logout</a></li>
+    <% } %>
+  </ul>
+
+</nav>

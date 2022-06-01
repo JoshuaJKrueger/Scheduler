@@ -1,0 +1,22 @@
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* --------------- Nav --------------- */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #25E310FF
+}
+/* --------------- Nav END --------------- */
+
+/* --------------- Main --------------- */
+
+/* --------------- Main END --------------- */
+
+/* TODO: Large and small screen sizes */

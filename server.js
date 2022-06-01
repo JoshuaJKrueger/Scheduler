@@ -16,6 +16,7 @@ const mongoStore = require('connect-mongo');
 
 // Models
 const User = require('./models/user');
+const Task = require('./models/task');
 
 // Routes
 const userRoutes = require('./routes/users');
@@ -91,7 +92,11 @@ application.use((request, response, next) => { // TODO: Update comment
 application.use('/', userRoutes);
 //? Task routes
 
-application.get('/', (request, response) => { response.render('home'); });
+// TODO: Use catchAsync
+application.get('/', async (request, response) => {
+    const tasks = await Task.find({});
+    response.render('home', { tasks });
+});
 
 // Catch all other routes
 application.all('*', (request, response, next) => { next(new ExpressError('Page not found.', 404)) });

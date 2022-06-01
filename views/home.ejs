@@ -1,23 +1,8 @@
-<!DOCTYPE html>
+<% layout('layout') %>
+<!-- TODO: See if css files can be add to the head -->
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="scheduler, schedule, manager, scheduling, habit, assistant, goal, tracker">
-    <meta name="author" content="Joshua J. Krueger">
+<% for (let task of tasks) { %>
+  <progress></progress>
+<% } %>
 
-    <title>Scheduler</title>
-    <link rel="icon" type="image/x-icon" href="/images/REMOVE.ico"> <!-- TODO: Create favicon -->
-
-    <!--<link rel="stylesheet" href="">-->
-  </head>
-
-  <body>
-    <!--<header></header>
-    <main></main>
-    <footer></footer>
-    <script src=""></script>-->
-  </body>
-</html>
+<!--<script src=""></script>-->

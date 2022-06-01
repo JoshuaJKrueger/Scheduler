@@ -18,6 +18,7 @@
 !utilities/*
 !views
 !views/*
+!views/partials/*
 !.gitignore
 !LICENSE.md
 !package.json
