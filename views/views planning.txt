@@ -1,0 +1,29 @@
+Notes
+- C loads a word processor
+- R Directory system
+- U same as create
+- D remove from db
+
+Questions
+- C Do what I do for tasks if it's a popup or a separate route
+- R (click on reminder and get taken to form?) page for all
+- U same as create
+- D have option in task and in edit, remove from db (and task if stored reference)
+
+Reminder
+- C keep consistent
+- R page for all, look up apis for push notifications, text, email...
+- U see create
+- D have option in task and in edit, remove from db (and task if stored reference)
+
+Stats
+- C Not sure if a create route is viable (how would "stats" track what they define to track)
+- R Still need to plan out what I'm going to track and how I will store everything
+- U probably just allow for editing on the view page
+- D disables tracking? or just clear
+
+User
+- C keep consistent
+- R shown in nav? and have a page (doubles as edit)
+- U see read
+- D in edit
