@@ -1,9 +1,15 @@
 <% layout('layout') %>
 <!-- TODO: See if css files can be add to the head -->
+<link rel="stylesheet" href="/css/home.css">
 
 <% for (let task of tasks) { %>
   <progress></progress>
 <% } %>
+
+<% for (let i = 0; i < 24; i++) { %>
+  <p class="time"><%= i %>:00</p>
+<% } %>
+<progress></progress>
 
 <!--
   !Missing new task button in design

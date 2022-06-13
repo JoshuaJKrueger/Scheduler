@@ -1,0 +1,22 @@
+:root {
+    --White: #EAE9E3FF;
+    --Blue: #79A3AFFF;
+    --Green: #0EDE0EFF;
+    --Red: #B60E0EFF;
+    --Black: #262726FF;
+}
+
+.time {
+    color: var(--Green);
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    padding: calc((100px - 1em) / 2) .3em;
+    margin: 0;
+    border-bottom: 1px dashed var(--White);
+    border-right: 1px dashed var(--White);
+}
+
+.time:last-of-type {
+    border-bottom: none;
+}
