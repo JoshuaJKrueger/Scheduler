@@ -20,6 +20,7 @@ const Task = require('./models/task');
 
 // Routes
 const userRoutes = require('./routes/users');
+const noteRoutes = require('./routes/notes');
 
 // Custom
 const ExpressError = require('./utilities/ExpressError');
@@ -72,6 +73,7 @@ application.use(flash());
 application.use(helmet());
 application.use(passport.initialize());
 application.use(passport.session());
+application.use('/tinymce', express.static(path.join(__dirname, 'node_modules', 'tinymce')));
 
 // Authentication
 passport.use(new localStrategy(User.authenticate()));
@@ -90,7 +92,7 @@ application.use((request, response, next) => { // TODO: Update comment
 
 // Routes
 application.use('/', userRoutes);
-//? Task routes
+application.use('/notes', noteRoutes);
 
 // TODO: Use catchAsync
 application.get('/', async (request, response) => {

@@ -20,3 +20,9 @@
 .time:last-of-type {
     border-bottom: none;
 }
+
+main {
+    display: grid;
+    grid-template: repeat(24, 1fr) / minmax(min-content, 5%) minmax(max-content, 95%);
+    grid-auto-flow: column;
+}

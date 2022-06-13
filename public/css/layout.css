@@ -74,12 +74,9 @@ nav ul li a {
 main {
     border: .4ch solid #EAE9E3DD;
     border-radius: 1ch;
-    display: grid;
-    grid-template: repeat(24, 1fr) / minmax(min-content, 5%) minmax(max-content, 95%);
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    grid-auto-flow: column;
 }
 
 main::-webkit-scrollbar {

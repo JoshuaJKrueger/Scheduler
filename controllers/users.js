@@ -1,7 +1,3 @@
-/*
-    Holds the logic for the user routes
-*/
-
 const User = require('../models/user');
 
 module.exports.renderRegister = (request, response) => { response.render('users/register'); };
