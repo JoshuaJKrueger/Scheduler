@@ -1,11 +1,3 @@
-:root {
-    --White: #EAE9E3FF;
-    --Blue: #79A3AFFF;
-    --Green: #0EDE0EFF;
-    --Red: #B60E0EFF;
-    --Black: #262726FF;
-}
-
 .time {
     color: var(--Green);
     font-weight: 600;

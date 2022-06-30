@@ -1,7 +1,5 @@
 const User = require('../models/user');
 
-module.exports.renderRegister = (request, response) => { response.render('users/register'); };
-
 module.exports.register = async (request, response, next) => {
     // Created to shorten the next line
     const user = new User({ email: request.body.email, username: request.body.username });
@@ -13,8 +11,6 @@ module.exports.register = async (request, response, next) => {
         response.redirect('/');
     });
 };
-
-module.exports.renderLogin = (request, response) => { response.render('users/login'); };
 
 module.exports.login = (request, response) => {
     request.flash('Success', 'Logged in successfully.');

@@ -9,7 +9,7 @@ const catchAsyncErrors = require('../utilities/catchAsyncErrors'); // TODO: May 
 const router = express.Router();
 
 router.route('/')
-    .get(/*authenticate.isLoggedIn, */notes.showAll);
+    .get(authenticate.isLoggedIn, notes.showAll);
 
 router.route('/new', authenticate.isLoggedIn, notes.create);
 
