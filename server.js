@@ -94,10 +94,8 @@ application.use((request, response, next) => { // TODO: Update comment
 application.use('/', userRoutes);
 application.use('/notes', noteRoutes);
 
-// TODO: Use catchAsync
 application.get('/', async (request, response) => {
-    const tasks = await Task.find({});
-    response.render('home', { tasks });
+    response.render('landing');
 });
 
 // Catch all other routes

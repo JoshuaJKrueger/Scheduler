@@ -30,6 +30,10 @@ body {
     height: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
 /* TODO: Maybe break some of this out into separate files*/
 /* --------------- Nav --------------- */
 nav {

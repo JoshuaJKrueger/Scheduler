@@ -1,0 +1,28 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #262726AA;
+}
+
+.popupContent {
+    background-color: var(--Blue);
+}
+
+.popupClose {
+    color: var(--White);
+    font-size: 3em;
+    font-weight: 600;
+    float: right;
+    padding: 0 .5em;
+}
+
+.popupClose:hover, .popupClose:focus {
+    color: var(--Black);
+    text-decoration: none;
+    cursor: pointer;
+}
