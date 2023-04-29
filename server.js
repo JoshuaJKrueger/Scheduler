@@ -21,6 +21,7 @@ const Task = require('./models/task');
 // Routes
 const userRoutes = require('./routes/users');
 const noteRoutes = require('./routes/notes');
+const statisticRoutes = require('./routes/statistics');
 
 // Custom
 const ExpressError = require('./utilities/ExpressError');
@@ -93,6 +94,7 @@ application.use((request, response, next) => { // TODO: Update comment
 // Routes
 application.use('/', userRoutes);
 application.use('/notes', noteRoutes);
+application.use('/statistics', statisticRoutes);
 
 application.get('/', async (request, response) => {
     response.render('landing');
